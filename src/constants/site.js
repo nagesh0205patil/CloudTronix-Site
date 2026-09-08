@@ -38,6 +38,7 @@ export const navLinks = [
   { label: 'Home', path: '/' },
   { label: 'About', path: '/about' },
   { label: 'Products', path: '/products' },
+  { label: 'IoT Projects', path: '/iot-projects' },
   { label: 'Services', path: '/services' },
   { label: 'Training', path: '/training' },
   { label: 'Gallery', path: '/gallery' },

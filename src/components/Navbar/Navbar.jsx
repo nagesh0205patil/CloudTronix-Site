@@ -39,7 +39,7 @@ export default function Navbar() {
           </span>
         </Link>
 
-        <div className="hidden items-center gap-1 lg:flex">
+        <div className="hidden items-center gap-1 xl:flex">
           {navLinks.map((link) => (
             <NavLink
               key={link.path}
@@ -55,14 +55,14 @@ export default function Navbar() {
           ))}
         </div>
 
-        <div className="hidden items-center gap-2 lg:flex">
+        <div className="hidden items-center gap-2 xl:flex">
           <Button to="/contact" variant="secondary">Request Demo</Button>
           <Button to="/contact">Get Quote</Button>
         </div>
 
         <button
           type="button"
-          className="focus-ring inline-flex h-11 w-11 items-center justify-center rounded-lg text-white lg:hidden"
+          className="focus-ring inline-flex h-11 w-11 items-center justify-center rounded-lg text-white xl:hidden"
           aria-label={open ? 'Close menu' : 'Open menu'}
           aria-controls="mobile-navigation"
           aria-expanded={open}
@@ -73,7 +73,7 @@ export default function Navbar() {
       </nav>
 
       {open ? (
-        <div className="fixed inset-x-0 top-20 z-40 border-t border-white/10 bg-night/95 px-4 py-5 shadow-lift backdrop-blur-xl lg:hidden" id="mobile-navigation">
+        <div className="fixed inset-x-0 top-20 z-40 border-t border-white/10 bg-night/95 px-4 py-5 shadow-lift backdrop-blur-xl xl:hidden" id="mobile-navigation">
           <nav className="grid gap-1" aria-label="Mobile navigation">
             {navLinks.map((link) => (
               <NavLink
