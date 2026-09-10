@@ -1,12 +1,11 @@
 import { Suspense, lazy } from 'react';
-import { Route, Routes } from 'react-router-dom';
+import { Navigate, Route, Routes } from 'react-router-dom';
 import MainLayout from './layouts/MainLayout';
 import Loader from './components/Loader/Loader';
 
 const Home = lazy(() => import('./pages/Home/Home'));
 const About = lazy(() => import('./pages/About/About'));
 const Products = lazy(() => import('./pages/Products/Products'));
-const IoTProjects = lazy(() => import('./pages/IoTProjects/IoTProjects'));
 const Services = lazy(() => import('./pages/Services/Services'));
 const Training = lazy(() => import('./pages/Training/Training'));
 const Gallery = lazy(() => import('./pages/Gallery/Gallery'));
@@ -23,7 +22,7 @@ export default function App() {
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="products" element={<Products />} />
-          <Route path="iot-projects" element={<IoTProjects />} />
+          <Route path="iot-projects" element={<Navigate to="/shopping" replace />} />
           <Route path="services" element={<Services />} />
           <Route path="training" element={<Training />} />
           <Route path="gallery" element={<Gallery />} />

@@ -1,4 +1,5 @@
 import Seo from '../../components/Seo';
+import PageHero from '../../components/PageHero';
 import SectionTitle from '../../components/SectionTitle/SectionTitle';
 import { galleryItems } from '../../data/content';
 
@@ -6,15 +7,14 @@ export default function Gallery() {
   return (
     <>
       <Seo title="Gallery" path="/gallery" />
-      <section className="bg-night py-20 text-white">
-        <div className="container-page">
-          <h1 className="font-heading text-4xl font-bold sm:text-5xl">Gallery</h1>
-          <p className="mt-5 max-w-3xl text-lg leading-8 text-slate-300">Labs, workshops, products, training programs, events, and field demos.</p>
-        </div>
-      </section>
+      <PageHero
+        eyebrow="Gallery"
+        title="A look at our labs, workshops, prototypes, and field demonstrations."
+        text="Explore moments from training sessions, product builds, automation work, student projects, and technology showcases."
+      />
       <section className="section-pad bg-surface dark:bg-night">
         <div className="container-page">
-          <SectionTitle eyebrow="Photos" title="Project and training moments" />
+          <SectionTitle eyebrow="Highlights" title="Project and training moments" />
           <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
             {galleryItems.map((item, index) => (
               <figure key={item} className="group overflow-hidden rounded-lg bg-white shadow-sm dark:bg-white/5">

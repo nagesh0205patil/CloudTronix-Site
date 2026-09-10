@@ -35,7 +35,7 @@ export default function Navbar() {
           <span className="flex h-11 w-11 items-center justify-center rounded-lg bg-primary font-heading text-lg font-bold text-white">CT</span>
           <span>
             <span className="block font-heading text-lg font-bold text-white">{siteConfig.shortName}</span>
-            <span className="block text-xs font-semibold text-slate-400">Smart Technology</span>
+            <span className="block text-xs font-semibold text-slate-400">Connected Engineering</span>
           </span>
         </Link>
 
@@ -56,8 +56,8 @@ export default function Navbar() {
         </div>
 
         <div className="hidden items-center gap-2 xl:flex">
-          <Button to="/contact" variant="secondary">Request Demo</Button>
-          <Button to="/contact">Get Quote</Button>
+          <Button to="/shopping" variant="secondary">Project Catalog</Button>
+          <Button to="/contact">Start a Project</Button>
         </div>
 
         <button
@@ -89,8 +89,8 @@ export default function Navbar() {
             ))}
           </nav>
           <div className="mt-4 flex gap-2">
-            <Button to="/contact" className="sm:w-auto" onClick={() => setOpen(false)}>Get Quote</Button>
-            <Button to="/contact" variant="secondary" onClick={() => setOpen(false)}>Request Demo</Button>
+            <Button to="/contact" className="sm:w-auto" onClick={() => setOpen(false)}>Start a Project</Button>
+            <Button to="/shopping" variant="secondary" onClick={() => setOpen(false)}>Project Catalog</Button>
           </div>
         </div>
       ) : null}

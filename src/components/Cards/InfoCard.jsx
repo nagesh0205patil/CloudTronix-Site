@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 export default function InfoCard({ icon: Icon, title, text, children, className = '' }) {
   return (
     <motion.article
-      className={`group rounded-lg border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lift dark:border-white/10 dark:bg-white/5 ${className}`}
+      className={`group rounded-lg border border-slate-200/80 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-soft dark:border-white/10 dark:bg-white/[0.04] ${className}`}
       initial={{ opacity: 0, y: 18 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.25 }}

@@ -1,6 +1,7 @@
 import SectionTitle from '../../components/SectionTitle/SectionTitle';
 import InfoCard from '../../components/Cards/InfoCard';
 import CTA from '../../components/CTA/CTA';
+import PageHero from '../../components/PageHero';
 import Seo from '../../components/Seo';
 import { timeline, values } from '../../data/content';
 
@@ -8,12 +9,16 @@ export default function About() {
   return (
     <>
       <Seo title="About Us" path="/about" />
-      <PageHero title="About CloudTronix" text="A technology company focused on practical IoT solutions, embedded systems, industrial automation, and technical training." />
+      <PageHero
+        eyebrow="About CloudTronix"
+        title="Engineering practical connected systems for real operating environments."
+        text="We combine embedded electronics, firmware, cloud platforms, automation workflows, and training programs to help teams build technology that can be tested, deployed, and supported."
+      />
       <section className="section-pad bg-white dark:bg-night">
         <div className="container-page grid gap-8 lg:grid-cols-3">
-          <InfoCard title="Vision" text="To make smart technology accessible, reliable, and valuable for industries, agriculture, education, and everyday infrastructure." />
-          <InfoCard title="Mission" text="To design connected products, deliver automation systems, and train engineers with hands-on technology that improves outcomes." />
-          <InfoCard title="Why CloudTronix" text="We combine field context, electronics expertise, cloud architecture, and teaching clarity in every engagement." />
+          <InfoCard title="Vision" text="Make connected technology reliable, accessible, and valuable for education, agriculture, industry, and everyday infrastructure." />
+          <InfoCard title="Mission" text="Design deployable products, deliver automation systems, and train engineers with practical, hardware-led learning." />
+          <InfoCard title="Operating Style" text="Clear discovery, disciplined prototyping, transparent documentation, and support-minded engineering from the first conversation." />
         </div>
       </section>
       <section className="section-pad bg-surface dark:bg-night">
@@ -26,7 +31,7 @@ export default function About() {
       </section>
       <section className="section-pad bg-white dark:bg-night">
         <div className="container-page">
-          <SectionTitle eyebrow="Journey" title="A steady path from labs to smart platforms" />
+          <SectionTitle eyebrow="Journey" title="A steady path from electronics labs to connected platforms" />
           <div className="mt-10 grid gap-6 md:grid-cols-4">
             {timeline.map((item) => (
               <div key={item.year} className="rounded-lg border border-slate-200 bg-white p-6 shadow-sm dark:border-white/10 dark:bg-white/5">
@@ -40,24 +45,12 @@ export default function About() {
       </section>
       <section className="section-pad bg-surface dark:bg-night">
         <div className="container-page grid gap-6 md:grid-cols-3">
-          {['Management Team', 'Infrastructure', 'Research Mindset'].map((title) => (
-            <InfoCard key={title} title={title} text="Focused leadership, practical labs, product prototyping, testing workflows, and structured delivery practices." />
-          ))}
+          <InfoCard title="Leadership" text="A focused team for planning, execution, partner coordination, and technical decision-making." />
+          <InfoCard title="Infrastructure" text="Practical lab capacity for electronics prototyping, board testing, firmware validation, and project demos." />
+          <InfoCard title="Research Mindset" text="Continuous exploration of sensors, cloud platforms, automation patterns, and learning outcomes." />
         </div>
       </section>
       <CTA />
     </>
-  );
-}
-
-function PageHero({ title, text }) {
-  return (
-    <section className="bg-night py-20 text-white">
-      <div className="container-page">
-        <p className="text-sm font-bold uppercase tracking-[0.24em] text-accent">CloudTronix</p>
-        <h1 className="mt-4 font-heading text-4xl font-bold sm:text-5xl">{title}</h1>
-        <p className="mt-5 max-w-3xl text-lg leading-8 text-slate-300">{text}</p>
-      </div>
-    </section>
   );
 }

@@ -12,7 +12,9 @@ export default function Footer() {
             <span className="flex h-11 w-11 items-center justify-center rounded-lg bg-primary font-heading text-lg font-bold">CT</span>
             <span className="font-heading text-xl font-bold">{siteConfig.name}</span>
           </div>
-          <p className="mt-4 max-w-md leading-7 text-slate-300">{siteConfig.description}</p>
+          <p className="mt-4 max-w-md leading-7 text-slate-300">
+            Engineering connected products, automation systems, cloud dashboards, and hands-on technical programs for practical deployment.
+          </p>
           <div className="mt-5 space-y-3 text-sm text-slate-300">
             <a className="flex gap-2 hover:text-secondary" href={siteConfig.mapUrl} target="_blank" rel="noreferrer" aria-label="Open CloudTronix location in Google Maps">
               <MapPin className="h-5 w-5 text-secondary" /> {siteConfig.address}
@@ -29,7 +31,7 @@ export default function Footer() {
           </div>
         </div>
         <FooterList title="Quick Links" items={navLinks.map((item) => ({ label: item.label, to: item.path }))} />
-        <FooterList title="Products" items={products.map((item) => ({ label: item.name, to: '/products' }))} />
+        <FooterList title="Products" items={products.map((item) => ({ label: item.name, to: `/products#${item.slug}` }))} />
         <FooterList
           title="Explore"
           items={[

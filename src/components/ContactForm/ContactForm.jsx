@@ -1,6 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { useForm } from 'react-hook-form';
-import ReCAPTCHA from 'react-google-recaptcha';
 import { Send } from 'lucide-react';
 import { siteConfig } from '../../constants/site';
 import { FORM_LIMITS, INDUSTRY_OPTIONS, ORGANIZATION_TYPE_OPTIONS } from '../../constants/enquiryForm';
@@ -17,7 +16,7 @@ import FormSelect from '../forms/FormSelect';
 import SubmissionFeedbackModal from '../feedback/SubmissionFeedbackModal';
 
 export default function ContactForm() {
-  const captchaRef = useRef(null);
+  const captchaScriptPromiseRef = useRef(null);
   const [status, setStatus] = useState({ type: '', message: '' });
   const [submissionFeedback, setSubmissionFeedback] = useState({
     isOpen: false,
@@ -25,15 +24,15 @@ export default function ContactForm() {
     title: '',
     message: '',
   });
-  const [captchaToken, setCaptchaToken] = useState('');
-  const isCaptchaRequired = siteConfig.recaptcha.enabled;
-  const canRenderCaptcha = isCaptchaRequired && siteConfig.recaptcha.siteKey;
+  const [captchaReady, setCaptchaReady] = useState(false);
+  const [captchaUnavailable, setCaptchaUnavailable] = useState(false);
+  const hasCaptchaSiteKey = Boolean(siteConfig.recaptcha.siteKey);
+  const shouldLoadCaptcha = siteConfig.recaptcha.enabled && hasCaptchaSiteKey;
   const {
     control,
     register,
     handleSubmit,
     reset,
-    setError,
     setValue,
     clearErrors,
     watch,
@@ -54,6 +53,32 @@ export default function ContactForm() {
     clearErrors('organizationName');
   }, [organizationType, setValue, clearErrors]);
 
+  useEffect(() => {
+    if (!shouldLoadCaptcha) {
+      setCaptchaReady(false);
+      return undefined;
+    }
+
+    let mounted = true;
+    loadEnterpriseCaptcha(siteConfig.recaptcha.siteKey, captchaScriptPromiseRef)
+      .then(() => {
+        if (mounted) {
+          setCaptchaReady(true);
+          setCaptchaUnavailable(false);
+        }
+      })
+      .catch(() => {
+        if (mounted) {
+          setCaptchaReady(false);
+          setCaptchaUnavailable(true);
+        }
+      });
+
+    return () => {
+      mounted = false;
+    };
+  }, [shouldLoadCaptcha]);
+
   const closeSubmissionFeedback = useCallback(() => {
     setSubmissionFeedback((current) => ({ ...current, isOpen: false }));
   }, []);
@@ -61,19 +86,20 @@ export default function ContactForm() {
   const onSubmit = async (data) => {
     setStatus({ type: '', message: '' });
 
-    if (isCaptchaRequired && !captchaToken) {
-      setError('captcha', { type: 'manual', message: 'Please complete the captcha verification.' });
-      return;
-    }
-
-    if (isCaptchaRequired && !siteConfig.recaptcha.siteKey) {
-      setStatus({ type: 'error', message: 'Captcha site key is missing. Add VITE_RECAPTCHA_SITE_KEY in .env.local and restart the Vite server.' });
-      return;
-    }
-
     try {
+      const token = await getEnterpriseCaptchaToken({
+        action: siteConfig.recaptcha.action,
+        enabled: shouldLoadCaptcha,
+        ready: captchaReady,
+        siteKey: siteConfig.recaptcha.siteKey,
+      });
+
+      if (shouldLoadCaptcha && !token) {
+        setCaptchaUnavailable(true);
+      }
+
       const normalizedData = normalizeEnquiryData(data);
-      const result = await sendEnquiryEmails(normalizedData, captchaToken);
+      const result = await sendEnquiryEmails(normalizedData, token);
       setSubmissionFeedback(result.customerEmailSent
         ? {
             isOpen: true,
@@ -88,8 +114,6 @@ export default function ContactForm() {
             message: 'Thanks. Your enquiry has been sent. We could not send the confirmation email, but our team received your details.',
           });
       reset();
-      setCaptchaToken('');
-      captchaRef.current?.reset();
     } catch (error) {
       const message = error instanceof Error ? error.message : 'Unknown email delivery error.';
       setStatus({ type: 'error', message: `We could not send your enquiry right now. ${message} Please email info@cloudtronix.in.` });
@@ -98,7 +122,12 @@ export default function ContactForm() {
 
   return (
     <>
-      <form onSubmit={handleSubmit(onSubmit)} className="grid gap-4 rounded-lg border border-white/10 bg-white/5 p-6 shadow-soft">
+      <form onSubmit={handleSubmit(onSubmit)} className="grid gap-4 rounded-lg border border-white/10 bg-night p-6 shadow-soft sm:p-8">
+      <div className="mb-2">
+        <p className="text-xs font-bold uppercase tracking-[0.18em] text-accent">Enquiry Desk</p>
+        <h2 className="mt-2 font-heading text-2xl font-bold text-white">Share your requirement</h2>
+        <p className="mt-2 text-sm leading-6 text-slate-300">Tell us what you want to build, automate, purchase, or learn. We will respond with the next practical step.</p>
+      </div>
       <Field label="Full name" fieldId="name" error={errors.name?.message}>
         <input id="name" {...register('name', { required: 'Full name is required' })} className="form-input" placeholder="Your full name" autoComplete="name" aria-invalid={Boolean(errors.name)} aria-describedby={errors.name ? 'name-error' : undefined} />
       </Field>
@@ -195,32 +224,20 @@ export default function ContactForm() {
         />
       </Field>
       <div>
-        {canRenderCaptcha ? (
-          <ReCAPTCHA
-            ref={captchaRef}
-            sitekey={siteConfig.recaptcha.siteKey}
-            theme="dark"
-            onChange={(token) => {
-              setCaptchaToken(token || '');
-              if (token) {
-                clearErrors('captcha');
-              }
-            }}
-            onExpired={() => setCaptchaToken('')}
-            onErrored={() => {
-              setCaptchaToken('');
-              setError('captcha', { type: 'manual', message: 'Captcha could not load. Please refresh and try again.' });
-            }}
-          />
-        ) : (
+        {captchaUnavailable ? (
           <div className="rounded-lg border border-amber-400/30 bg-amber-500/10 px-4 py-3 text-sm font-medium text-amber-100">
-            Captcha is waiting for configuration. Add <span className="font-bold">VITE_RECAPTCHA_SITE_KEY</span> in <span className="font-bold">.env.local</span>, then restart the Vite server.
+            Captcha verification is temporarily unavailable. You can still send your enquiry.
           </div>
-        )}
+        ) : null}
+        {shouldLoadCaptcha && captchaReady ? (
+          <p className="text-xs font-medium text-slate-300">
+            Protected by reCAPTCHA Fraud Defense.
+          </p>
+        ) : null}
         {errors.captcha?.message ? <span className="mt-2 block text-xs text-red-300">{errors.captcha.message}</span> : null}
       </div>
       <div className="flex justify-center pt-1">
-        <Button type="submit" icon={Send} disabled={isSubmitting || (isCaptchaRequired && !siteConfig.recaptcha.siteKey)} className="px-4 py-2.5">
+        <Button type="submit" icon={Send} disabled={isSubmitting} className="px-4 py-2.5">
           {isSubmitting ? 'Sending...' : 'Send Enquiry'}
         </Button>
       </div>
@@ -239,6 +256,54 @@ export default function ContactForm() {
       />
     </>
   );
+}
+
+function loadEnterpriseCaptcha(siteKey, promiseRef) {
+  if (globalThis.grecaptcha?.enterprise) {
+    return Promise.resolve();
+  }
+
+  if (promiseRef.current) {
+    return promiseRef.current;
+  }
+
+  promiseRef.current = new Promise((resolve, reject) => {
+    const existingScript = document.querySelector('script[data-cloudtronix-recaptcha="enterprise"]');
+
+    if (existingScript) {
+      existingScript.addEventListener('load', resolve, { once: true });
+      existingScript.addEventListener('error', reject, { once: true });
+      return;
+    }
+
+    const script = document.createElement('script');
+    script.src = `https://www.google.com/recaptcha/enterprise.js?render=${encodeURIComponent(siteKey)}`;
+    script.async = true;
+    script.defer = true;
+    script.dataset.cloudtronixRecaptcha = 'enterprise';
+    script.onload = resolve;
+    script.onerror = reject;
+    document.head.appendChild(script);
+  });
+
+  return promiseRef.current;
+}
+
+function getEnterpriseCaptchaToken({ action, enabled, ready, siteKey }) {
+  if (!enabled || !ready || !globalThis.grecaptcha?.enterprise) {
+    return Promise.resolve('');
+  }
+
+  return new Promise((resolve) => {
+    globalThis.grecaptcha.enterprise.ready(async () => {
+      try {
+        const token = await globalThis.grecaptcha.enterprise.execute(siteKey, { action });
+        resolve(token || '');
+      } catch {
+        resolve('');
+      }
+    });
+  });
 }
 
 function Field({ label, fieldId, error, children }) {

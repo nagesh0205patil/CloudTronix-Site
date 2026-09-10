@@ -23,6 +23,7 @@ export const siteConfig = {
   recaptcha: {
     siteKey: import.meta.env.VITE_RECAPTCHA_SITE_KEY || '',
     enabled: import.meta.env.VITE_RECAPTCHA_ENABLED !== 'false',
+    action: import.meta.env.VITE_RECAPTCHA_ACTION || 'ENQUIRY_SUBMIT',
   },
 };
 
@@ -38,11 +39,10 @@ export const navLinks = [
   { label: 'Home', path: '/' },
   { label: 'About', path: '/about' },
   { label: 'Products', path: '/products' },
-  { label: 'IoT Projects', path: '/iot-projects' },
+  { label: 'Shopping', path: '/shopping' },
   { label: 'Services', path: '/services' },
   { label: 'Training', path: '/training' },
   { label: 'Gallery', path: '/gallery' },
   { label: 'Careers', path: '/careers' },
-  { label: 'Shopping', path: '/shopping' },
   { label: 'Contact', path: '/contact' },
 ];

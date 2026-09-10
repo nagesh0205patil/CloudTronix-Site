@@ -1,6 +1,7 @@
 import ContactForm from '../../components/ContactForm/ContactForm';
 import InfoCard from '../../components/Cards/InfoCard';
 import SectionTitle from '../../components/SectionTitle/SectionTitle';
+import PageHero from '../../components/PageHero';
 import Seo from '../../components/Seo';
 import { jobs } from '../../data/content';
 
@@ -8,15 +9,14 @@ export default function Careers() {
   return (
     <>
       <Seo title="Careers" path="/careers" />
-      <section className="bg-night py-20 text-white">
-        <div className="container-page">
-          <h1 className="font-heading text-4xl font-bold sm:text-5xl">Careers</h1>
-          <p className="mt-5 max-w-3xl text-lg leading-8 text-slate-300">Work on practical IoT, electronics, automation, cloud dashboards, and technical education.</p>
-        </div>
-      </section>
+      <PageHero
+        eyebrow="Careers"
+        title="Build practical technology with a team that values learning and ownership."
+        text="Work across IoT, electronics, automation, cloud dashboards, technical education, and customer-facing engineering projects."
+      />
       <section className="section-pad bg-surface dark:bg-night">
         <div className="container-page">
-          <SectionTitle eyebrow="Openings" title="Join a team that builds and teaches" />
+          <SectionTitle eyebrow="Openings" title="Roles for builders, trainers, and problem-solvers" />
           <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
             {jobs.map((job) => <InfoCard key={job.title} icon={job.icon} title={job.title} text={`${job.type} - ${job.location}`} />)}
           </div>

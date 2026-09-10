@@ -24,21 +24,21 @@ import {
 export { products } from './productsData';
 
 export const stats = [
-  { value: 100, suffix: '+', label: 'Projects' },
-  { value: 500, suffix: '+', label: 'Students Trained' },
-  { value: 50, suffix: '+', label: 'Clients' },
-  { value: 10, suffix: '+', label: 'Products' },
+  { value: 100, suffix: '+', label: 'Delivered Projects' },
+  { value: 500, suffix: '+', label: 'Engineers Trained' },
+  { value: 50, suffix: '+', label: 'Institution & Industry Clients' },
+  { value: 10, suffix: '+', label: 'Connected Product Lines' },
 ];
 
 export const services = [
-  { title: 'IoT Product Development', icon: Network, text: 'End-to-end connected device design from concept to production-ready MVP.' },
-  { title: 'Embedded System Design', icon: Cpu, text: 'Microcontroller, sensor, communication, and edge firmware architecture.' },
-  { title: 'PCB Design', icon: Zap, text: 'Schematic design, PCB layout, prototyping, and board bring-up support.' },
-  { title: 'Firmware Development', icon: Wrench, text: 'Reliable embedded firmware for production and lab-grade electronics.' },
-  { title: 'Cloud Integration', icon: RadioTower, text: 'Device telemetry, dashboards, alerts, APIs, and remote monitoring.' },
-  { title: 'AWS IoT & Azure IoT', icon: Building2, text: 'Cloud-native architecture for secure industrial and agricultural IoT.' },
-  { title: 'Industrial Automation', icon: Factory, text: 'Automation panels, controls, monitoring, and custom electronics interfaces.' },
-  { title: 'Consulting & AMC', icon: ShieldCheck, text: 'Technical consulting, custom electronics, prototypes, and maintenance.' },
+  { title: 'IoT Product Engineering', icon: Network, text: 'Connected device strategy, electronics, firmware, enclosure-ready prototypes, pilots, and production handover.' },
+  { title: 'Embedded System Design', icon: Cpu, text: 'Sensor interfaces, communication stacks, microcontroller architecture, power design, and edge logic.' },
+  { title: 'PCB Design & Bring-Up', icon: Zap, text: 'Schematics, board layout, BOM planning, prototype assembly support, testing, and revision closure.' },
+  { title: 'Firmware Development', icon: Wrench, text: 'Maintainable embedded firmware with device states, diagnostics, OTA-ready patterns, and field reliability.' },
+  { title: 'Cloud Dashboards', icon: RadioTower, text: 'Telemetry pipelines, dashboards, alerts, reports, APIs, and remote monitoring workflows.' },
+  { title: 'AWS IoT & Azure IoT', icon: Building2, text: 'Secure cloud architecture for device identity, data ingestion, storage, visualization, and automation.' },
+  { title: 'Industrial Automation', icon: Factory, text: 'Control panels, monitoring systems, relay logic, instrumentation, and operator-friendly interfaces.' },
+  { title: 'Consulting & AMC', icon: ShieldCheck, text: 'Architecture reviews, prototype rescue, deployment planning, maintenance, and long-term technical support.' },
 ];
 
 export const trainingCourses = [
@@ -86,22 +86,22 @@ export const testimonials = [
   {
     name: 'Apeksha Patil',
     role: 'Engineering Head',
-    quote: 'Their engineering expertise delivered scalable, reliable, and production-ready technology solutions.',
+    quote: 'CloudTronix brought structure, engineering depth, and reliable execution to a complex connected-device requirement.',
   },
   {
     name: 'Shubham Patil',
     role: 'T&P Head',
-    quote: 'Their industry-focused training prepared students with practical, job-ready technical skills.',
+    quote: 'Their training programs gave students practical exposure to hardware, cloud workflows, and project delivery discipline.',
   },
   {
-    name: 'Tanvi Warankar',
+    name: 'Tanvi Varankar',
     role: 'Operation Head',
-    quote: 'CloudTronix streamlined operations with efficient workflows and dependable technical support.',
+    quote: 'The team understood our operational needs quickly and delivered a dependable automation workflow.',
   },
   {
-    name: 'Chaitanya Oja',
+    name: 'Chaitanya Ojha',
     role: 'Marketing Head',
-    quote: 'CloudTronix transformed our vision into a compelling and impactful technology brand presence..',
+    quote: 'They translated a technical vision into a clear, credible product experience for customers and stakeholders.',
   },
   {
     name: 'Rehan Kapadia',
@@ -109,22 +109,22 @@ export const testimonials = [
     quote: 'Their clean, innovative designs perfectly balanced usability, branding, and modern aesthetics.',
   },
   {
-    name: 'Dilip Dolia',
+    name: 'Dilip Doliya',
     role: 'Account Head',
-    quote: 'Transparent communication and dependable execution made every project financially predictable.',
+    quote: 'Clear milestones, transparent communication, and dependable execution made planning straightforward.',
   },
   {
     name: 'Mit Damani',
     role: 'Development Head',
-    quote: 'Their development approach ensured scalable, maintainable, and high-quality software delivery.',
+    quote: 'Their development approach produced maintainable software that our team could understand and extend.',
   },
 ];
 
 export const faqs = [
-  { q: 'Do you build custom IoT products?', a: 'Yes. We support concept design, embedded electronics, firmware, cloud dashboards, and pilot deployment.' },
-  { q: 'Can training programs be customized for colleges?', a: 'Yes. Courses can be aligned with academic schedules, lab infrastructure, and project outcomes.' },
-  { q: 'Do your solutions support cloud dashboards?', a: 'Yes. We integrate device telemetry with cloud dashboards, alerts, reports, and APIs.' },
-  { q: 'Do you provide maintenance?', a: 'Yes. Annual maintenance and consulting support are available for eligible products and deployments.' },
+  { q: 'Can CloudTronix build a custom IoT product from idea to pilot?', a: 'Yes. We support requirement discovery, electronics design, firmware, cloud dashboards, prototype testing, and pilot deployment.' },
+  { q: 'Do you work with colleges for final year projects and training?', a: 'Yes. Programs can be aligned with academic calendars, lab capacity, student outcomes, and project demonstration requirements.' },
+  { q: 'Can your systems include dashboards, alerts, and remote control?', a: 'Yes. We integrate telemetry dashboards, configurable alerts, reports, APIs, and secure remote operation where required.' },
+  { q: 'Do you provide support after deployment?', a: 'Yes. Consulting, maintenance, upgrades, and annual support plans are available for eligible products and deployments.' },
 ];
 
 export const timeline = [
@@ -153,7 +153,7 @@ export const jobs = [
 ];
 
 export const values = [
-  { title: 'Practical Innovation', icon: Lightbulb, text: 'Technology that solves field-level problems, not just demo-room problems.' },
-  { title: 'Reliable Engineering', icon: ShieldCheck, text: 'Design choices grounded in durability, maintainability, and safety.' },
-  { title: 'Hands-on Learning', icon: Award, text: 'Training with real hardware, live labs, projects, and deployment context.' },
+  { title: 'Practical Innovation', icon: Lightbulb, text: 'Solutions are shaped around field conditions, user workflows, and measurable operating value.' },
+  { title: 'Reliable Engineering', icon: ShieldCheck, text: 'Design decisions prioritize durability, maintainability, safety, and supportability from day one.' },
+  { title: 'Hands-on Enablement', icon: Award, text: 'Training and handover use real hardware, live labs, documentation, and deployment context.' },
 ];

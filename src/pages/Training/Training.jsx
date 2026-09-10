@@ -2,22 +2,22 @@ import { Award, Briefcase, FlaskConical, GraduationCap } from 'lucide-react';
 import SectionTitle from '../../components/SectionTitle/SectionTitle';
 import InfoCard from '../../components/Cards/InfoCard';
 import CTA from '../../components/CTA/CTA';
+import PageHero from '../../components/PageHero';
 import Seo from '../../components/Seo';
 import { trainingCourses } from '../../data/content';
 
 export default function Training() {
   return (
     <>
-      <Seo title="Training" path="/training" />
-      <section className="bg-night py-20 text-white">
-        <div className="container-page">
-          <h1 className="font-heading text-4xl font-bold sm:text-5xl">Technical Training</h1>
-          <p className="mt-5 max-w-3xl text-lg leading-8 text-slate-300">Hands-on courses for students, colleges, and professionals who want practical embedded, IoT, cloud, and DevOps skills.</p>
-        </div>
-      </section>
+      <Seo title="Technical Training" path="/training" />
+      <PageHero
+        eyebrow="Technical Training"
+        title="Hands-on programs for embedded, IoT, cloud, and DevOps careers."
+        text="Structured courses for students, colleges, and professionals who need practical skills, live lab exposure, project confidence, and deployment context."
+      />
       <section className="section-pad bg-surface dark:bg-night">
         <div className="container-page">
-          <SectionTitle eyebrow="Courses" title="Live labs, projects, certification, and career support" />
+          <SectionTitle eyebrow="Courses" title="Practical curriculum with hardware, cloud, and mentor guidance" />
           <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {trainingCourses.map((course) => {
               const Icon = course.icon;
@@ -42,7 +42,7 @@ export default function Training() {
             { title: 'Live Labs', icon: GraduationCap },
             { title: 'Internship', icon: Briefcase },
             { title: 'Placement Assistance', icon: Award },
-          ].map((item) => <InfoCard key={item.title} {...item} text="Structured learning support with real hardware, cloud platforms, and mentor guidance." />)}
+          ].map((item) => <InfoCard key={item.title} {...item} text="Outcome-focused support with real hardware, cloud workflows, documentation, and guided practice." />)}
         </div>
       </section>
       <CTA />
