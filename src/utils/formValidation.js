@@ -1,4 +1,4 @@
-import { FORM_LIMITS, INDUSTRY_OPTIONS, ORGANIZATION_TYPE_OPTIONS } from '../constants/enquiryForm';
+import { FORM_LIMITS, ORGANIZATION_TYPE_OPTIONS } from '../constants/enquiryForm';
 
 const ORGANIZATION_NAME_PATTERN = /^[\p{L}\p{N} &.,'()-]+$/u;
 const REQUIREMENT_PATTERN = /^[\p{L}\p{N}\s,."'()\-:;?!/+%]+$/u;
@@ -77,8 +77,16 @@ export function validateOrganizationName(value) {
   return true;
 }
 
-export function validateIndustry(value) {
-  return INDUSTRY_OPTIONS.some((option) => option.value === value) || 'Please select an industry.';
+export function validateProjectName(value) {
+  const input = sanitizePlainText(value);
+  if (!input) return 'Please enter your project name.';
+  if (input.length > FORM_LIMITS.projectNameMax) {
+    return `Project name cannot exceed ${FORM_LIMITS.projectNameMax} characters.`;
+  }
+  if (containsHtml(input) || containsUrl(input) || containsSuspiciousInput(input)) {
+    return 'HTML, scripts, or links are not allowed.';
+  }
+  return true;
 }
 
 export function validateRequirement(value) {
@@ -109,7 +117,7 @@ export function normalizeEnquiryData(formData) {
     phone: sanitizePlainText(formData.phone),
     organizationType: sanitizePlainText(formData.organizationType),
     organizationName: sanitizePlainText(formData.organizationName),
-    interestedIndustry: sanitizePlainText(formData.interestedIndustry),
+    projectName: sanitizePlainText(formData.projectName),
     subject: sanitizePlainText(formData.subject),
     interest: sanitizePlainText(formData.interest),
     requirement: sanitizeRequirement(formData.requirement),

@@ -9,7 +9,6 @@ export const iotProjects = [
         "function":  "Monitor",
         "mainMonitoring":  "",
         "remoteControl":  "",
-        "price":  "23500",
         "useCases":  [
                          "Track vehicle/device location or movement remotely in real time",
                          "View route, movement, or location status on a live web dashboard",
@@ -26,7 +25,6 @@ export const iotProjects = [
         "function":  "Monitor",
         "mainMonitoring":  "",
         "remoteControl":  "",
-        "price":  "24000",
         "useCases":  [
                          "Continuously monitor important health parameters from a remote location",
                          "Display live readings and status on a web/mobile dashboard",
@@ -43,7 +41,6 @@ export const iotProjects = [
         "function":  "Monitor",
         "mainMonitoring":  "",
         "remoteControl":  "",
-        "price":  "23500",
         "useCases":  [
                          "Authenticate registered voters using fingerprint verification",
                          "Prevent duplicate or unauthorized voting attempts",
@@ -60,7 +57,6 @@ export const iotProjects = [
         "function":  "Monitor",
         "mainMonitoring":  "",
         "remoteControl":  "",
-        "price":  "23000",
         "useCases":  [
                          "Record attendance automatically using fingerprint/identity verification",
                          "Monitor present/absent status through a live web dashboard",
@@ -77,7 +73,6 @@ export const iotProjects = [
         "function":  "Monitor",
         "mainMonitoring":  "",
         "remoteControl":  "",
-        "price":  "23000",
         "useCases":  [
                          "Monitor air-quality/pollution parameters continuously from anywhere",
                          "Show real-time environmental readings on a web dashboard",
@@ -94,7 +89,6 @@ export const iotProjects = [
         "function":  "Monitor",
         "mainMonitoring":  "",
         "remoteControl":  "",
-        "price":  "23000",
         "useCases":  [
                          "Track vehicle/device location or movement remotely in real time",
                          "View route, movement, or location status on a live web dashboard",
@@ -111,7 +105,6 @@ export const iotProjects = [
         "function":  "Monitor",
         "mainMonitoring":  "",
         "remoteControl":  "",
-        "price":  "22000",
         "useCases":  [
                          "Monitor battery voltage, current, state of charge and temperature remotely",
                          "Detect low battery, over-voltage, over-current or abnormal temperature conditions",
@@ -128,7 +121,6 @@ export const iotProjects = [
         "function":  "Monitor",
         "mainMonitoring":  "",
         "remoteControl":  "",
-        "price":  "23000",
         "useCases":  [
                          "Monitor electrical parameters and energy consumption remotely in real time",
                          "Detect overload, abnormal voltage/current or excessive consumption conditions",
@@ -145,7 +137,6 @@ export const iotProjects = [
         "function":  "Monitor",
         "mainMonitoring":  "",
         "remoteControl":  "",
-        "price":  "23000",
         "useCases":  [
                          "Monitor electrical parameters and energy consumption remotely in real time",
                          "Detect overload, abnormal voltage/current or excessive consumption conditions",
@@ -162,7 +153,6 @@ export const iotProjects = [
         "function":  "Monitor",
         "mainMonitoring":  "",
         "remoteControl":  "",
-        "price":  "22000",
         "useCases":  [
                          "Monitor LD2410 Sensor with ESP32 – Human Presence Detection remotely through an IoT dashboard",
                          "Receive real-time notifications when configured abnormal or fault conditions occur",
@@ -179,7 +169,6 @@ export const iotProjects = [
         "function":  "Control",
         "mainMonitoring":  "",
         "remoteControl":  "",
-        "price":  "23000",
         "useCases":  [
                          "Monitor IoT AC Dimmer using TRIAC \u0026 ESP32 WebServer remotely through an IoT dashboard",
                          "Receive real-time notifications when configured abnormal or fault conditions occur",
@@ -196,7 +185,6 @@ export const iotProjects = [
         "function":  "Monitor + Control",
         "mainMonitoring":  "",
         "remoteControl":  "",
-        "price":  "23500",
         "useCases":  [
                          "Monitor ESP32 Home Automation with KME Smart IoT Platform remotely through an IoT dashboard",
                          "Receive real-time notifications when configured abnormal or fault conditions occur",
@@ -213,7 +201,6 @@ export const iotProjects = [
         "function":  "Monitor",
         "mainMonitoring":  "",
         "remoteControl":  "",
-        "price":  "23500",
         "useCases":  [
                          "Monitor How to use Modbus RTU with ESP32 to read Sensor Data remotely through an IoT dashboard",
                          "Receive real-time notifications when configured abnormal or fault conditions occur",
@@ -230,7 +217,6 @@ export const iotProjects = [
         "function":  "Monitor",
         "mainMonitoring":  "",
         "remoteControl":  "",
-        "price":  "22000",
         "useCases":  [
                          "Monitor Build AD8495 K-Type Thermocouple ESP32 WebServer remotely through an IoT dashboard",
                          "Receive real-time notifications when configured abnormal or fault conditions occur",
@@ -247,7 +233,6 @@ export const iotProjects = [
         "function":  "Monitor",
         "mainMonitoring":  "",
         "remoteControl":  "",
-        "price":  "21000",
         "useCases":  [
                          "Monitor environmental parameters continuously from a remote dashboard",
                          "Generate threshold-based alerts for abnormal environmental conditions",
@@ -264,7 +249,6 @@ export const iotProjects = [
         "function":  "Monitor",
         "mainMonitoring":  "",
         "remoteControl":  "",
-        "price":  "24000",
         "useCases":  [
                          "Monitor electrical parameters and energy consumption remotely in real time",
                          "Detect overload, abnormal voltage/current or excessive consumption conditions",
@@ -281,7 +265,6 @@ export const iotProjects = [
         "function":  "Monitor + Control",
         "mainMonitoring":  "",
         "remoteControl":  "",
-        "price":  "24000",
         "useCases":  [
                          "Monitor Home Automation using Amazon AWS IoT Core \u0026 ESP32 remotely through an IoT dashboard",
                          "Receive real-time notifications when configured abnormal or fault conditions occur",
@@ -298,7 +281,6 @@ export const iotProjects = [
         "function":  "Monitor + Control",
         "mainMonitoring":  "",
         "remoteControl":  "",
-        "price":  "23000",
         "useCases":  [
                          "Monitor IoT Smart Exhaust Fan: ESP32 Based Monitoring \u0026 Control remotely through an IoT dashboard",
                          "Receive real-time notifications when configured abnormal or fault conditions occur",
@@ -315,7 +297,6 @@ export const iotProjects = [
         "function":  "Monitor + Control",
         "mainMonitoring":  "",
         "remoteControl":  "",
-        "price":  "23500",
         "useCases":  [
                          "Monitor Alexa \u0026 ESP32 Based Smart \u0026 Manual Home Automation System remotely through an IoT dashboard",
                          "Receive real-time notifications when configured abnormal or fault conditions occur",
@@ -332,7 +313,6 @@ export const iotProjects = [
         "function":  "Monitor + Control",
         "mainMonitoring":  "",
         "remoteControl":  "",
-        "price":  "23500",
         "useCases":  [
                          "Monitor IoT Home Automation using ESP32 WebServer with PCB remotely through an IoT dashboard",
                          "Receive real-time notifications when configured abnormal or fault conditions occur",
@@ -349,7 +329,6 @@ export const iotProjects = [
         "function":  "Monitor + Log",
         "mainMonitoring":  "",
         "remoteControl":  "",
-        "price":  "22500",
         "useCases":  [
                          "Monitor electrical parameters and energy consumption remotely in real time",
                          "Detect overload, abnormal voltage/current or excessive consumption conditions",
@@ -366,7 +345,6 @@ export const iotProjects = [
         "function":  "Monitor",
         "mainMonitoring":  "",
         "remoteControl":  "",
-        "price":  "23000",
         "useCases":  [
                          "Monitor electrical parameters and energy consumption remotely in real time",
                          "Detect overload, abnormal voltage/current or excessive consumption conditions",
@@ -383,7 +361,6 @@ export const iotProjects = [
         "function":  "Monitor",
         "mainMonitoring":  "",
         "remoteControl":  "",
-        "price":  "23000",
         "useCases":  [
                          "Monitor air-quality/pollution parameters continuously from anywhere",
                          "Show real-time environmental readings on a web dashboard",
@@ -400,7 +377,6 @@ export const iotProjects = [
         "function":  "Monitor",
         "mainMonitoring":  "",
         "remoteControl":  "",
-        "price":  "23500",
         "useCases":  [
                          "Monitor electrical parameters and energy consumption remotely in real time",
                          "Detect overload, abnormal voltage/current or excessive consumption conditions",
@@ -417,7 +393,6 @@ export const iotProjects = [
         "function":  "Monitor + Control",
         "mainMonitoring":  "",
         "remoteControl":  "",
-        "price":  "23500",
         "useCases":  [
                          "Monitor Home Automation using ESP32 \u0026 Blynk 2.0 with Real-Time Feedback remotely through an IoT dashboard",
                          "Receive real-time notifications when configured abnormal or fault conditions occur",
@@ -434,7 +409,6 @@ export const iotProjects = [
         "function":  "Monitor",
         "mainMonitoring":  "",
         "remoteControl":  "",
-        "price":  "24000",
         "useCases":  [
                          "Monitor water level/moisture and system status remotely",
                          "Control pump or valve operation from the dashboard or automatically",
@@ -451,7 +425,6 @@ export const iotProjects = [
         "function":  "Control",
         "mainMonitoring":  "",
         "remoteControl":  "",
-        "price":  "22500",
         "useCases":  [
                          "Monitor Control Relay/LED/Lamp with AWS IoT Core using ESP32 remotely through an IoT dashboard",
                          "Receive real-time notifications when configured abnormal or fault conditions occur",
@@ -468,7 +441,6 @@ export const iotProjects = [
         "function":  "Monitor/Control",
         "mainMonitoring":  "",
         "remoteControl":  "",
-        "price":  "22000",
         "useCases":  [
                          "Monitor Connecting ESP32 to Amazon AWS IoT Core using MQTT remotely through an IoT dashboard",
                          "Receive real-time notifications when configured abnormal or fault conditions occur",
@@ -485,7 +457,6 @@ export const iotProjects = [
         "function":  "Monitor",
         "mainMonitoring":  "",
         "remoteControl":  "",
-        "price":  "23000",
         "useCases":  [
                          "Monitor water level/moisture and system status remotely",
                          "Control pump or valve operation from the dashboard or automatically",
@@ -502,7 +473,6 @@ export const iotProjects = [
         "function":  "Monitor",
         "mainMonitoring":  "",
         "remoteControl":  "",
-        "price":  "23000",
         "useCases":  [
                          "Monitor water level/moisture and system status remotely",
                          "Control pump or valve operation from the dashboard or automatically",
@@ -519,7 +489,6 @@ export const iotProjects = [
         "function":  "Monitor",
         "mainMonitoring":  "",
         "remoteControl":  "",
-        "price":  "23000",
         "useCases":  [
                          "Monitor electrical parameters and energy consumption remotely in real time",
                          "Detect overload, abnormal voltage/current or excessive consumption conditions",
@@ -536,7 +505,6 @@ export const iotProjects = [
         "function":  "Monitor",
         "mainMonitoring":  "",
         "remoteControl":  "",
-        "price":  "22500",
         "useCases":  [
                          "Monitor environmental parameters continuously from a remote dashboard",
                          "Generate threshold-based alerts for abnormal environmental conditions",
@@ -553,7 +521,6 @@ export const iotProjects = [
         "function":  "Monitor + Control",
         "mainMonitoring":  "",
         "remoteControl":  "",
-        "price":  "23500",
         "useCases":  [
                          "Monitor IoT ESP32 Based PM2.5 Monitoring with Air Freshener System remotely through an IoT dashboard",
                          "Receive real-time notifications when configured abnormal or fault conditions occur",
@@ -570,7 +537,6 @@ export const iotProjects = [
         "function":  "Monitor",
         "mainMonitoring":  "",
         "remoteControl":  "",
-        "price":  "22500",
         "useCases":  [
                          "Monitor air-quality/pollution parameters continuously from anywhere",
                          "Show real-time environmental readings on a web dashboard",
@@ -587,7 +553,6 @@ export const iotProjects = [
         "function":  "Monitor",
         "mainMonitoring":  "",
         "remoteControl":  "",
-        "price":  "25000",
         "useCases":  [
                          "Monitor water level/moisture and system status remotely",
                          "Control pump or valve operation from the dashboard or automatically",
@@ -604,7 +569,6 @@ export const iotProjects = [
         "function":  "Monitor",
         "mainMonitoring":  "",
         "remoteControl":  "",
-        "price":  "25000",
         "useCases":  [
                          "Monitor environmental parameters continuously from a remote dashboard",
                          "Generate threshold-based alerts for abnormal environmental conditions",
@@ -621,7 +585,6 @@ export const iotProjects = [
         "function":  "Monitor + Alert",
         "mainMonitoring":  "",
         "remoteControl":  "",
-        "price":  "22500",
         "useCases":  [
                          "Monitor air-quality/pollution parameters continuously from anywhere",
                          "Show real-time environmental readings on a web dashboard",
@@ -638,7 +601,6 @@ export const iotProjects = [
         "function":  "Monitor",
         "mainMonitoring":  "",
         "remoteControl":  "",
-        "price":  "24500",
         "useCases":  [
                          "Monitor ESP32 LoRa Thingspeak Gateway with LoRa Sensor Node remotely through an IoT dashboard",
                          "Receive real-time notifications when configured abnormal or fault conditions occur",
@@ -655,7 +617,6 @@ export const iotProjects = [
         "function":  "Monitor",
         "mainMonitoring":  "",
         "remoteControl":  "",
-        "price":  "24000",
         "useCases":  [
                          "Monitor ESP32 LoRa Sensor Data Monitoring on Web Server remotely through an IoT dashboard",
                          "Receive real-time notifications when configured abnormal or fault conditions occur",
@@ -672,7 +633,6 @@ export const iotProjects = [
         "function":  "Monitor",
         "mainMonitoring":  "",
         "remoteControl":  "",
-        "price":  "23500",
         "useCases":  [
                          "Continuously monitor important health parameters from a remote location",
                          "Display live readings and status on a web/mobile dashboard",
@@ -689,7 +649,6 @@ export const iotProjects = [
         "function":  "Monitor",
         "mainMonitoring":  "",
         "remoteControl":  "",
-        "price":  "22500",
         "useCases":  [
                          "Continuously monitor important health parameters from a remote location",
                          "Display live readings and status on a web/mobile dashboard",
@@ -706,7 +665,6 @@ export const iotProjects = [
         "function":  "Control",
         "mainMonitoring":  "",
         "remoteControl":  "",
-        "price":  "23000",
         "useCases":  [
                          "Monitor access/security status remotely in real time",
                          "Detect unauthorized access or security events and send notifications",
@@ -723,7 +681,6 @@ export const iotProjects = [
         "function":  "Monitor",
         "mainMonitoring":  "",
         "remoteControl":  "",
-        "price":  "21500",
         "useCases":  [
                          "Monitor environmental parameters continuously from a remote dashboard",
                          "Generate threshold-based alerts for abnormal environmental conditions",
@@ -740,7 +697,6 @@ export const iotProjects = [
         "function":  "Monitor",
         "mainMonitoring":  "",
         "remoteControl":  "",
-        "price":  "23000",
         "useCases":  [
                          "Continuously monitor important health parameters from a remote location",
                          "Display live readings and status on a web/mobile dashboard",
@@ -757,7 +713,6 @@ export const iotProjects = [
         "function":  "Monitor",
         "mainMonitoring":  "",
         "remoteControl":  "",
-        "price":  "20500",
         "useCases":  [
                          "Monitor environmental parameters continuously from a remote dashboard",
                          "Generate threshold-based alerts for abnormal environmental conditions",
@@ -774,7 +729,6 @@ export const iotProjects = [
         "function":  "Monitor",
         "mainMonitoring":  "",
         "remoteControl":  "",
-        "price":  "23500",
         "useCases":  [
                          "Monitor water level/moisture and system status remotely",
                          "Control pump or valve operation from the dashboard or automatically",
@@ -791,7 +745,6 @@ export const iotProjects = [
         "function":  "Monitor",
         "mainMonitoring":  "",
         "remoteControl":  "",
-        "price":  "23000",
         "useCases":  [
                          "Monitor IoT-enabled Smart Fridge with ESP8266 WebServer remotely through an IoT dashboard",
                          "Receive real-time notifications when configured abnormal or fault conditions occur",
@@ -808,7 +761,6 @@ export const iotProjects = [
         "function":  "Monitor",
         "mainMonitoring":  "",
         "remoteControl":  "",
-        "price":  "23000",
         "useCases":  [
                          "Continuously monitor important health parameters from a remote location",
                          "Display live readings and status on a web/mobile dashboard",
@@ -825,7 +777,6 @@ export const iotProjects = [
         "function":  "Monitor",
         "mainMonitoring":  "",
         "remoteControl":  "",
-        "price":  "23000",
         "useCases":  [
                          "Monitor IoT Solar Panel Monitoring System with ESP8266 \u0026 MQTT remotely through an IoT dashboard",
                          "Receive real-time notifications when configured abnormal or fault conditions occur",
@@ -842,7 +793,6 @@ export const iotProjects = [
         "function":  "Monitor + Control",
         "mainMonitoring":  "",
         "remoteControl":  "",
-        "price":  "23000",
         "useCases":  [
                          "Monitor Smart \u0026 Manual Home Automation with Alexa \u0026 ESP8266 remotely through an IoT dashboard",
                          "Receive real-time notifications when configured abnormal or fault conditions occur",
@@ -859,7 +809,6 @@ export const iotProjects = [
         "function":  "Monitor",
         "mainMonitoring":  "",
         "remoteControl":  "",
-        "price":  "21500",
         "useCases":  [
                          "Monitor battery voltage, current, state of charge and temperature remotely",
                          "Detect low battery, over-voltage, over-current or abnormal temperature conditions",
@@ -876,7 +825,6 @@ export const iotProjects = [
         "function":  "Monitor + Control",
         "mainMonitoring":  "",
         "remoteControl":  "",
-        "price":  "24500",
         "useCases":  [
                          "Monitor Industrial Automation with Amazon AWS IoT Core \u0026 ESP8266 remotely through an IoT dashboard",
                          "Receive real-time notifications when configured abnormal or fault conditions occur",
@@ -893,7 +841,6 @@ export const iotProjects = [
         "function":  "Monitor",
         "mainMonitoring":  "",
         "remoteControl":  "",
-        "price":  "22500",
         "useCases":  [
                          "Monitor electrical parameters and energy consumption remotely in real time",
                          "Detect overload, abnormal voltage/current or excessive consumption conditions",
@@ -910,7 +857,6 @@ export const iotProjects = [
         "function":  "Monitor",
         "mainMonitoring":  "",
         "remoteControl":  "",
-        "price":  "22000",
         "useCases":  [
                          "Monitor battery voltage, current, state of charge and temperature remotely",
                          "Detect low battery, over-voltage, over-current or abnormal temperature conditions",
@@ -927,7 +873,6 @@ export const iotProjects = [
         "function":  "Monitor + Control",
         "mainMonitoring":  "",
         "remoteControl":  "",
-        "price":  "23000",
         "useCases":  [
                          "Monitor water level/moisture and system status remotely",
                          "Control pump or valve operation from the dashboard or automatically",
@@ -944,7 +889,6 @@ export const iotProjects = [
         "function":  "Monitor + Control",
         "mainMonitoring":  "",
         "remoteControl":  "",
-        "price":  "22500",
         "useCases":  [
                          "Monitor environmental parameters continuously from a remote dashboard",
                          "Generate threshold-based alerts for abnormal environmental conditions",
@@ -961,7 +905,6 @@ export const iotProjects = [
         "function":  "Monitor",
         "mainMonitoring":  "",
         "remoteControl":  "",
-        "price":  "23000",
         "useCases":  [
                          "Track vehicle/device location or movement remotely in real time",
                          "View route, movement, or location status on a live web dashboard",
@@ -978,7 +921,6 @@ export const iotProjects = [
         "function":  "Monitor + Control",
         "mainMonitoring":  "",
         "remoteControl":  "",
-        "price":  "24000",
         "useCases":  [
                          "Monitor IoT Based Smart Kitchen Automation \u0026 Monitoring with ESP8266 remotely through an IoT dashboard",
                          "Receive real-time notifications when configured abnormal or fault conditions occur",
@@ -995,7 +937,6 @@ export const iotProjects = [
         "function":  "Monitor",
         "mainMonitoring":  "",
         "remoteControl":  "",
-        "price":  "22500",
         "useCases":  [
                          "Monitor air-quality/pollution parameters continuously from anywhere",
                          "Show real-time environmental readings on a web dashboard",
@@ -1012,7 +953,6 @@ export const iotProjects = [
         "function":  "Monitor + Control",
         "mainMonitoring":  "",
         "remoteControl":  "",
-        "price":  "24000",
         "useCases":  [
                          "Monitor water level/moisture and system status remotely",
                          "Control pump or valve operation from the dashboard or automatically",
@@ -1029,7 +969,6 @@ export const iotProjects = [
         "function":  "",
         "mainMonitoring":  "Voltage, current, SoC, temp, charging",
         "remoteControl":  "Load cutoff / protection",
-        "price":  "19000",
         "useCases":  [
                          "Monitor battery voltage, current, state of charge and temperature remotely",
                          "Detect low battery, over-voltage, over-current or abnormal temperature conditions",
@@ -1046,7 +985,6 @@ export const iotProjects = [
         "function":  "",
         "mainMonitoring":  "Voltage, current, load, oil/temp",
         "remoteControl":  "Cooling/alarm control",
-        "price":  "21000",
         "useCases":  [
                          "Continuously monitor important health parameters from a remote location",
                          "Display live readings and status on a web/mobile dashboard",
@@ -1063,7 +1001,6 @@ export const iotProjects = [
         "function":  "",
         "mainMonitoring":  "Temp, RH, door, power",
         "remoteControl":  "Cooling/fan control",
-        "price":  "20000",
         "useCases":  [
                          "Monitor temperature, humidity, door status and power condition continuously",
                          "Control cooling/fan equipment remotely or automatically to maintain set conditions",
@@ -1080,7 +1017,6 @@ export const iotProjects = [
         "function":  "",
         "mainMonitoring":  "V, I, power, fuel, runtime",
         "remoteControl":  "Start/stop",
-        "price":  "21000",
         "useCases":  [
                          "Monitor generator voltage, current, power, fuel level and runtime remotely",
                          "Start or stop the generator remotely when operational conditions permit",
@@ -1097,7 +1033,6 @@ export const iotProjects = [
         "function":  "",
         "mainMonitoring":  "Input/output V, load, battery, temp",
         "remoteControl":  "Output/load control",
-        "price":  "19500",
         "useCases":  [
                          "Continuously monitor important health parameters from a remote location",
                          "Display live readings and status on a web/mobile dashboard",
@@ -1114,7 +1049,6 @@ export const iotProjects = [
         "function":  "",
         "mainMonitoring":  "Current, temp, vibration, RPM",
         "remoteControl":  "Motor ON/OFF",
-        "price":  "20000",
         "useCases":  [
                          "Continuously monitor important health parameters from a remote location",
                          "Display live readings and status on a web/mobile dashboard",
@@ -1131,7 +1065,6 @@ export const iotProjects = [
         "function":  "",
         "mainMonitoring":  "Vibration, current, temperature",
         "remoteControl":  "Alarm/shutdown",
-        "price":  "21000",
         "useCases":  [
                          "Monitor motor/pump current, temperature, vibration and operating status remotely",
                          "Detect overload, overheating, abnormal vibration or dry-run/fault conditions",
@@ -1148,7 +1081,6 @@ export const iotProjects = [
         "function":  "",
         "mainMonitoring":  "V/I, flow, pressure, dry-run",
         "remoteControl":  "Auto/manual pump",
-        "price":  "19500",
         "useCases":  [
                          "Monitor motor/pump current, temperature, vibration and operating status remotely",
                          "Detect overload, overheating, abnormal vibration or dry-run/fault conditions",
@@ -1165,7 +1097,6 @@ export const iotProjects = [
         "function":  "",
         "mainMonitoring":  "Water level, current, flow",
         "remoteControl":  "Pump control",
-        "price":  "19000",
         "useCases":  [
                          "Monitor motor/pump current, temperature, vibration and operating status remotely",
                          "Detect overload, overheating, abnormal vibration or dry-run/fault conditions",
@@ -1182,7 +1113,6 @@ export const iotProjects = [
         "function":  "",
         "mainMonitoring":  "Underground/overhead tanks, flow",
         "remoteControl":  "Pumps + valves",
-        "price":  "22000",
         "useCases":  [
                          "Monitor battery voltage, current, state of charge and temperature remotely",
                          "Detect low battery, over-voltage, over-current or abnormal temperature conditions",
@@ -1199,7 +1129,6 @@ export const iotProjects = [
         "function":  "",
         "mainMonitoring":  "Flow, pressure, leakage",
         "remoteControl":  "Isolation valve",
-        "price":  "20000",
         "useCases":  [
                          "Monitor Flow, pressure, leakage remotely through an IoT dashboard",
                          "Receive real-time notifications when configured abnormal or fault conditions occur",
@@ -1216,7 +1145,6 @@ export const iotProjects = [
         "function":  "",
         "mainMonitoring":  "Tank, pressure, flow",
         "remoteControl":  "Multiple valves/pumps",
-        "price":  "22000",
         "useCases":  [
                          "Monitor motor/pump current, temperature, vibration and operating status remotely",
                          "Detect overload, overheating, abnormal vibration or dry-run/fault conditions",
@@ -1233,7 +1161,6 @@ export const iotProjects = [
         "function":  "",
         "mainMonitoring":  "Tank level, rainfall, water flow",
         "remoteControl":  "Pump/valve",
-        "price":  "18500",
         "useCases":  [
                          "Monitor motor/pump current, temperature, vibration and operating status remotely",
                          "Detect overload, overheating, abnormal vibration or dry-run/fault conditions",
@@ -1250,7 +1177,6 @@ export const iotProjects = [
         "function":  "",
         "mainMonitoring":  "Level, pH, TDS, turbidity",
         "remoteControl":  "Pumps/valves",
-        "price":  "22000",
         "useCases":  [
                          "Monitor motor/pump current, temperature, vibration and operating status remotely",
                          "Detect overload, overheating, abnormal vibration or dry-run/fault conditions",
@@ -1267,7 +1193,6 @@ export const iotProjects = [
         "function":  "",
         "mainMonitoring":  "TDS in/out, flow, filter usage",
         "remoteControl":  "Flush/valve/pump",
-        "price":  "20000",
         "useCases":  [
                          "Monitor motor/pump current, temperature, vibration and operating status remotely",
                          "Detect overload, overheating, abnormal vibration or dry-run/fault conditions",
@@ -1284,7 +1209,6 @@ export const iotProjects = [
         "function":  "",
         "mainMonitoring":  "pH, temp, water level, turbidity",
         "remoteControl":  "Pump/dosing",
-        "price":  "21000",
         "useCases":  [
                          "Monitor motor/pump current, temperature, vibration and operating status remotely",
                          "Detect overload, overheating, abnormal vibration or dry-run/fault conditions",
@@ -1301,7 +1225,6 @@ export const iotProjects = [
         "function":  "",
         "mainMonitoring":  "pH, EC/TDS, water temp/level",
         "remoteControl":  "Pump/nutrient dosing",
-        "price":  "22000",
         "useCases":  [
                          "Monitor motor/pump current, temperature, vibration and operating status remotely",
                          "Detect overload, overheating, abnormal vibration or dry-run/fault conditions",
@@ -1318,7 +1241,6 @@ export const iotProjects = [
         "function":  "",
         "mainMonitoring":  "Temp, RH, soil, light, CO₂",
         "remoteControl":  "Fan/pump/mister",
-        "price":  "21000",
         "useCases":  [
                          "Monitor motor/pump current, temperature, vibration and operating status remotely",
                          "Detect overload, overheating, abnormal vibration or dry-run/fault conditions",
@@ -1335,7 +1257,6 @@ export const iotProjects = [
         "function":  "",
         "mainMonitoring":  "Temp, RH, NH₃, water/feed",
         "remoteControl":  "Fan/light/pump",
-        "price":  "20500",
         "useCases":  [
                          "Monitor motor/pump current, temperature, vibration and operating status remotely",
                          "Detect overload, overheating, abnormal vibration or dry-run/fault conditions",
@@ -1352,7 +1273,6 @@ export const iotProjects = [
         "function":  "",
         "mainMonitoring":  "Temp, RH, gases, water",
         "remoteControl":  "Fan/pump",
-        "price":  "20000",
         "useCases":  [
                          "Monitor air-quality/pollution parameters continuously from anywhere",
                          "Show real-time environmental readings on a web dashboard",
@@ -1369,7 +1289,6 @@ export const iotProjects = [
         "function":  "",
         "mainMonitoring":  "Temp, RH, gas/moisture",
         "remoteControl":  "Ventilation",
-        "price":  "19500",
         "useCases":  [
                          "Monitor air-quality/pollution parameters continuously from anywhere",
                          "Show real-time environmental readings on a web dashboard",
@@ -1386,7 +1305,6 @@ export const iotProjects = [
         "function":  "",
         "mainMonitoring":  "Temp, RH, CO₂",
         "remoteControl":  "Humidifier/fan",
-        "price":  "20000",
         "useCases":  [
                          "Monitor Temp, RH, CO₂ remotely through an IoT dashboard",
                          "Receive real-time notifications when configured abnormal or fault conditions occur",
@@ -1403,7 +1321,6 @@ export const iotProjects = [
         "function":  "",
         "mainMonitoring":  "Soil moisture, temp, RH, light",
         "remoteControl":  "Irrigation/lights",
-        "price":  "18500",
         "useCases":  [
                          "Monitor water level/moisture and system status remotely",
                          "Control pump or valve operation from the dashboard or automatically",
@@ -1420,7 +1337,6 @@ export const iotProjects = [
         "function":  "",
         "mainMonitoring":  "Moisture, flow, EC/pH",
         "remoteControl":  "Pumps/valves",
-        "price":  "21000",
         "useCases":  [
                          "Monitor motor/pump current, temperature, vibration and operating status remotely",
                          "Detect overload, overheating, abnormal vibration or dry-run/fault conditions",
@@ -1437,7 +1353,6 @@ export const iotProjects = [
         "function":  "",
         "mainMonitoring":  "Light status, current, energy",
         "remoteControl":  "Individual light control",
-        "price":  "20000",
         "useCases":  [
                          "Monitor electrical parameters and energy consumption remotely in real time",
                          "Detect overload, abnormal voltage/current or excessive consumption conditions",
@@ -1454,7 +1369,6 @@ export const iotProjects = [
         "function":  "",
         "mainMonitoring":  "Battery, panel V/I, lamp",
         "remoteControl":  "Light scheduling",
-        "price":  "19500",
         "useCases":  [
                          "Monitor battery voltage, current, state of charge and temperature remotely",
                          "Detect low battery, over-voltage, over-current or abnormal temperature conditions",
@@ -1471,7 +1385,6 @@ export const iotProjects = [
         "function":  "",
         "mainMonitoring":  "Floor/room energy consumption",
         "remoteControl":  "Load control",
-        "price":  "22000",
         "useCases":  [
                          "Monitor electrical parameters and energy consumption remotely in real time",
                          "Detect overload, abnormal voltage/current or excessive consumption conditions",
@@ -1488,7 +1401,6 @@ export const iotProjects = [
         "function":  "",
         "mainMonitoring":  "V, I, PF, power",
         "remoteControl":  "Capacitor-bank control",
-        "price":  "21000",
         "useCases":  [
                          "Monitor electrical parameters and energy consumption remotely in real time",
                          "Detect overload, abnormal voltage/current or excessive consumption conditions",
@@ -1505,7 +1417,6 @@ export const iotProjects = [
         "function":  "",
         "mainMonitoring":  "Voltage, current, events",
         "remoteControl":  "Auto trip/reconnect",
-        "price":  "18500",
         "useCases":  [
                          "Monitor electrical parameters and energy consumption remotely in real time",
                          "Detect overload, abnormal voltage/current or excessive consumption conditions",
@@ -1522,7 +1433,6 @@ export const iotProjects = [
         "function":  "",
         "mainMonitoring":  "V/I/PF/temp/energy",
         "remoteControl":  "Breaker/load control",
-        "price":  "21000",
         "useCases":  [
                          "Monitor electrical parameters and energy consumption remotely in real time",
                          "Detect overload, abnormal voltage/current or excessive consumption conditions",
@@ -1539,7 +1449,6 @@ export const iotProjects = [
         "function":  "",
         "mainMonitoring":  "3-phase V/I/power/PF",
         "remoteControl":  "Load control",
-        "price":  "22000",
         "useCases":  [
                          "Monitor electrical parameters and energy consumption remotely in real time",
                          "Detect overload, abnormal voltage/current or excessive consumption conditions",
@@ -1556,7 +1465,6 @@ export const iotProjects = [
         "function":  "",
         "mainMonitoring":  "Voltage, current, power, energy",
         "remoteControl":  "Charging ON/OFF",
-        "price":  "21000",
         "useCases":  [
                          "Monitor electrical parameters and energy consumption remotely in real time",
                          "Detect overload, abnormal voltage/current or excessive consumption conditions",
@@ -1573,7 +1481,6 @@ export const iotProjects = [
         "function":  "",
         "mainMonitoring":  "Solar V/I, battery, load",
         "remoteControl":  "Charge/load control",
-        "price":  "20000",
         "useCases":  [
                          "Monitor battery voltage, current, state of charge and temperature remotely",
                          "Detect low battery, over-voltage, over-current or abnormal temperature conditions",
@@ -1590,7 +1497,6 @@ export const iotProjects = [
         "function":  "",
         "mainMonitoring":  "Cylinder weight, gas leakage",
         "remoteControl":  "Gas shutoff valve",
-        "price":  "19000",
         "useCases":  [
                          "Monitor air-quality/pollution parameters continuously from anywhere",
                          "Show real-time environmental readings on a web dashboard",
@@ -1607,7 +1513,6 @@ export const iotProjects = [
         "function":  "",
         "mainMonitoring":  "Smoke, temp, flame",
         "remoteControl":  "Alarm/exhaust",
-        "price":  "19000",
         "useCases":  [
                          "Monitor smoke, flame and temperature indicators continuously",
                          "Generate immediate remote alerts when a possible fire condition is detected",
@@ -1624,7 +1529,6 @@ export const iotProjects = [
         "function":  "",
         "mainMonitoring":  "Temp, RH, smoke, power, door",
         "remoteControl":  "Fan/alarm",
-        "price":  "19000",
         "useCases":  [
                          "Monitor electrical parameters and energy consumption remotely in real time",
                          "Detect overload, abnormal voltage/current or excessive consumption conditions",
@@ -1641,7 +1545,6 @@ export const iotProjects = [
         "function":  "",
         "mainMonitoring":  "Rack temp/RH/power/door",
         "remoteControl":  "Fan/load control",
-        "price":  "20500",
         "useCases":  [
                          "Monitor electrical parameters and energy consumption remotely in real time",
                          "Detect overload, abnormal voltage/current or excessive consumption conditions",
@@ -1658,7 +1561,6 @@ export const iotProjects = [
         "function":  "",
         "mainMonitoring":  "Battery, mains, DG, temp, door",
         "remoteControl":  "Equipment control",
-        "price":  "22000",
         "useCases":  [
                          "Monitor battery voltage, current, state of charge and temperature remotely",
                          "Detect low battery, over-voltage, over-current or abnormal temperature conditions",
@@ -1675,7 +1577,6 @@ export const iotProjects = [
         "function":  "",
         "mainMonitoring":  "Temp, smoke, door, power",
         "remoteControl":  "AC/alarm control",
-        "price":  "19500",
         "useCases":  [
                          "Monitor electrical parameters and energy consumption remotely in real time",
                          "Detect overload, abnormal voltage/current or excessive consumption conditions",
@@ -1692,7 +1593,6 @@ export const iotProjects = [
         "function":  "",
         "mainMonitoring":  "Temp, CO₂, occupancy, energy",
         "remoteControl":  "Fan/light control",
-        "price":  "19000",
         "useCases":  [
                          "Monitor electrical parameters and energy consumption remotely in real time",
                          "Detect overload, abnormal voltage/current or excessive consumption conditions",
@@ -1709,7 +1609,6 @@ export const iotProjects = [
         "function":  "",
         "mainMonitoring":  "Gas, temp, smoke, occupancy",
         "remoteControl":  "Exhaust/alarm",
-        "price":  "19500",
         "useCases":  [
                          "Monitor air-quality/pollution parameters continuously from anywhere",
                          "Show real-time environmental readings on a web dashboard",
@@ -1726,7 +1625,6 @@ export const iotProjects = [
         "function":  "",
         "mainMonitoring":  "Environment, occupancy, equipment status",
         "remoteControl":  "Lights/fan",
-        "price":  "20000",
         "useCases":  [
                          "Monitor environmental parameters continuously from a remote dashboard",
                          "Generate threshold-based alerts for abnormal environmental conditions",
@@ -1743,7 +1641,6 @@ export const iotProjects = [
         "function":  "",
         "mainMonitoring":  "Temp, RH, door, power",
         "remoteControl":  "Cooling/alarm",
-        "price":  "18500",
         "useCases":  [
                          "Monitor temperature, humidity, door status and power condition continuously",
                          "Control cooling/fan equipment remotely or automatically to maintain set conditions",
@@ -1760,7 +1657,6 @@ export const iotProjects = [
         "function":  "",
         "mainMonitoring":  "Temp, location, door",
         "remoteControl":  "Alerts/device status",
-        "price":  "20000",
         "useCases":  [
                          "Monitor access/security status remotely in real time",
                          "Detect unauthorized access or security events and send notifications",
@@ -1777,7 +1673,6 @@ export const iotProjects = [
         "function":  "",
         "mainMonitoring":  "Temperature, door, power",
         "remoteControl":  "Alarm/cooling control",
-        "price":  "19500",
         "useCases":  [
                          "Monitor temperature, humidity, door status and power condition continuously",
                          "Control cooling/fan equipment remotely or automatically to maintain set conditions",
@@ -1794,7 +1689,6 @@ export const iotProjects = [
         "function":  "",
         "mainMonitoring":  "Vibration, current, door/status",
         "remoteControl":  "Alerts/maintenance mode",
-        "price":  "21000",
         "useCases":  [
                          "Monitor electrical parameters and energy consumption remotely in real time",
                          "Detect overload, abnormal voltage/current or excessive consumption conditions",
@@ -1811,7 +1705,6 @@ export const iotProjects = [
         "function":  "",
         "mainMonitoring":  "Speed, load, current, temp",
         "remoteControl":  "Start/stop",
-        "price":  "20000",
         "useCases":  [
                          "Monitor electrical parameters and energy consumption remotely in real time",
                          "Detect overload, abnormal voltage/current or excessive consumption conditions",
@@ -1828,7 +1721,6 @@ export const iotProjects = [
         "function":  "",
         "mainMonitoring":  "Production, runtime, downtime",
         "remoteControl":  "Machine/status control",
-        "price":  "20000",
         "useCases":  [
                          "Monitor Production, runtime, downtime remotely through an IoT dashboard",
                          "Receive real-time notifications when configured abnormal or fault conditions occur",
@@ -1845,7 +1737,6 @@ export const iotProjects = [
         "function":  "",
         "mainMonitoring":  "Pressure, temp, current, runtime",
         "remoteControl":  "Compressor control",
-        "price":  "20500",
         "useCases":  [
                          "Monitor electrical parameters and energy consumption remotely in real time",
                          "Detect overload, abnormal voltage/current or excessive consumption conditions",
@@ -1862,7 +1753,6 @@ export const iotProjects = [
         "function":  "",
         "mainMonitoring":  "Temp, pressure, water level",
         "remoteControl":  "Pump/alarm control",
-        "price":  "21000",
         "useCases":  [
                          "Monitor motor/pump current, temperature, vibration and operating status remotely",
                          "Detect overload, overheating, abnormal vibration or dry-run/fault conditions",
@@ -1879,7 +1769,6 @@ export const iotProjects = [
         "function":  "",
         "mainMonitoring":  "Pressure, temp, current",
         "remoteControl":  "Auto compressor",
-        "price":  "19500",
         "useCases":  [
                          "Monitor water level/moisture and system status remotely",
                          "Control pump or valve operation from the dashboard or automatically",
@@ -1896,7 +1785,6 @@ export const iotProjects = [
         "function":  "",
         "mainMonitoring":  "Vibration, current, temp, runtime",
         "remoteControl":  "Status/alarm",
-        "price":  "20500",
         "useCases":  [
                          "Monitor electrical parameters and energy consumption remotely in real time",
                          "Detect overload, abnormal voltage/current or excessive consumption conditions",
@@ -1913,7 +1801,6 @@ export const iotProjects = [
         "function":  "",
         "mainMonitoring":  "Machine-wise energy/current",
         "remoteControl":  "Individual load control",
-        "price":  "20500",
         "useCases":  [
                          "Monitor electrical parameters and energy consumption remotely in real time",
                          "Detect overload, abnormal voltage/current or excessive consumption conditions",
@@ -1930,7 +1817,6 @@ export const iotProjects = [
         "function":  "",
         "mainMonitoring":  "Fuel level, GPS, consumption",
         "remoteControl":  "Alerts",
-        "price":  "21000",
         "useCases":  [
                          "Track vehicle/device location or movement remotely in real time",
                          "View route, movement, or location status on a live web dashboard",
@@ -1947,7 +1833,6 @@ export const iotProjects = [
         "function":  "",
         "mainMonitoring":  "GPS, speed, route, status",
         "remoteControl":  "Alerts/geofence",
-        "price":  "20000",
         "useCases":  [
                          "Track vehicle/device location or movement remotely in real time",
                          "View route, movement, or location status on a live web dashboard",
@@ -1964,7 +1849,6 @@ export const iotProjects = [
         "function":  "",
         "mainMonitoring":  "Battery, temp, RPM/status",
         "remoteControl":  "Alerts",
-        "price":  "19000",
         "useCases":  [
                          "Track vehicle/device location or movement remotely in real time",
                          "View route, movement, or location status on a live web dashboard",
@@ -1981,7 +1865,6 @@ export const iotProjects = [
         "function":  "",
         "mainMonitoring":  "Slots, vehicle count, gate",
         "remoteControl":  "Automatic/manual gate",
-        "price":  "20000",
         "useCases":  [
                          "Track vehicle/device location or movement remotely in real time",
                          "View route, movement, or location status on a live web dashboard",
@@ -1998,7 +1881,6 @@ export const iotProjects = [
         "function":  "",
         "mainMonitoring":  "Vibration, temp, current",
         "remoteControl":  "Alerts/status",
-        "price":  "21000",
         "useCases":  [
                          "Monitor electrical parameters and energy consumption remotely in real time",
                          "Detect overload, abnormal voltage/current or excessive consumption conditions",
@@ -2015,7 +1897,6 @@ export const iotProjects = [
         "function":  "",
         "mainMonitoring":  "Fill %, gas, temp",
         "remoteControl":  "Collection alerts",
-        "price":  "18000",
         "useCases":  [
                          "Monitor air-quality/pollution parameters continuously from anywhere",
                          "Show real-time environmental readings on a web dashboard",
@@ -2032,7 +1913,6 @@ export const iotProjects = [
         "function":  "",
         "mainMonitoring":  "Bin level/type/status",
         "remoteControl":  "Motor/servo control",
-        "price":  "19500",
         "useCases":  [
                          "Monitor motor/pump current, temperature, vibration and operating status remotely",
                          "Detect overload, overheating, abnormal vibration or dry-run/fault conditions",

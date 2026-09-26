@@ -28,3 +28,7 @@ VITE_RECAPTCHA_SITE_KEY=
 ```
 
 Create `.env.local` from `.env.example`, add real keys there, and restart `npm run dev`.
+
+Project cards link to `/contact?project=...` to prefill the editable Project Name field. Direct enquiries can enter a project name manually. The selected name persists when refreshing that link.
+
+In both EmailJS dashboard templates, replace the Interested Industry row with `Project Name: {{project_name}}`. The form sends `project_name` (and the `projectName` alias) with both emails.

@@ -1,12 +1,12 @@
 import { useMemo, useState } from 'react';
 import { motion, useReducedMotion } from 'framer-motion';
-import { ArrowLeft, ArrowRight, BadgeIndianRupee, Cpu, GraduationCap, ListChecks, RadioTower } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Cpu, GraduationCap, ListChecks, RadioTower } from 'lucide-react';
 import CTA from '../../components/CTA/CTA';
 import Seo from '../../components/Seo';
 import { PROJECTS_PER_PAGE, iotProjects } from '../../data/iotProjectsData';
 
 const seoDescription =
-  'Explore final year engineering IoT project ideas with practical use cases, modules, monitoring scope, controls, and estimated complete project pricing.';
+  'Explore final year engineering IoT project ideas with practical use cases, modules, monitoring scope, and controls.';
 
 export default function IoTProjects() {
   const reduceMotion = useReducedMotion();
@@ -41,7 +41,7 @@ export default function IoTProjects() {
             Industrial IoT project catalog for final year engineering students.
           </h1>
           <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300 sm:text-xl">
-            Browse practical ESP32 and IoT project ideas with clear use cases, monitoring scope, control options, and estimated complete project cost.
+            Browse practical ESP32 and IoT project ideas with clear use cases, monitoring scope, and control options.
           </p>
           <div className="mt-10 grid gap-3 text-sm text-slate-300 sm:grid-cols-3 lg:max-w-3xl">
             <Stat label="Projects" value={iotProjects.length} />
@@ -94,7 +94,6 @@ function ProjectCard({ project, serial }) {
     project.function ? { icon: RadioTower, label: 'Function', value: project.function } : null,
     project.mainMonitoring ? { icon: RadioTower, label: 'Monitoring', value: project.mainMonitoring } : null,
     project.remoteControl ? { icon: ListChecks, label: 'Control', value: project.remoteControl } : null,
-    project.price ? { icon: BadgeIndianRupee, label: 'Est. Price', value: formatPrice(project.price) } : null,
   ].filter(Boolean);
 
   return (
@@ -195,14 +194,3 @@ function getVisiblePages(currentPage, totalPages) {
   return Array.from({ length: end - start + 1 }, (_, index) => start + index);
 }
 
-function formatPrice(price) {
-  const value = Number(price);
-  if (!Number.isFinite(value)) {
-    return price;
-  }
-  return new Intl.NumberFormat('en-IN', {
-    style: 'currency',
-    currency: 'INR',
-    maximumFractionDigits: 0,
-  }).format(value);
-}

@@ -20,7 +20,7 @@ import { PROJECTS_PER_PAGE, iotProjects } from '../../data/iotProjectsData';
 const allFilters = ['All', 'Monitor', 'Control', 'Monitor + Control'];
 
 const seoDescription =
-  'Browse CloudTronix final year IoT project listings with modules, monitoring scope, control options, use cases, and estimated complete project pricing.';
+  'Browse CloudTronix final year IoT project listings with modules, monitoring scope, control options, and use cases.';
 
 export default function Shopping() {
   const reduceMotion = useReducedMotion();
@@ -84,7 +84,7 @@ export default function Shopping() {
         <PageHero
           eyebrow="IoT Project Shopping"
           title="Final year IoT projects ready for real implementation."
-          text="Browse project-ready ESP32 and industrial IoT builds with module details, monitoring scope, control options, use cases, and estimated complete project cost."
+          text="Browse project-ready ESP32 and industrial IoT builds with module details, monitoring scope, control options, and use cases."
           meta={
             <>
               <Stat icon={PackageCheck} label="Total Listings" value={iotProjects.length} />
@@ -193,10 +193,6 @@ function ProjectCard({ project, serial }) {
         <span className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/10 font-heading text-sm font-bold text-primary dark:bg-secondary/15 dark:text-secondary">
           {serial.toString().padStart(2, '0')}
         </span>
-        <span className="inline-flex items-center gap-1.5 rounded-md border border-slate-200 bg-surface px-2.5 py-1 text-xs font-bold text-muted dark:border-white/10 dark:bg-night dark:text-slate-300">
-          <BadgeIndianRupee aria-hidden="true" className="h-3.5 w-3.5 text-accent" />
-          {formatPrice(project.price)}
-        </span>
       </div>
 
       <h2 className="mt-5 font-heading text-lg font-bold leading-7 text-ink dark:text-white">{project.title}</h2>
@@ -227,7 +223,7 @@ function ProjectCard({ project, serial }) {
         </ul>
       </div>
 
-      <Button to="/contact" variant="secondary" className="mt-5" icon={PackageCheck}>Enquire Now</Button>
+      <Button to={`/contact?${new globalThis.URLSearchParams({ project: project.title })}`} variant="secondary" className="mt-5" icon={PackageCheck}>Enquire Now</Button>
     </article>
   );
 }
@@ -304,14 +300,3 @@ function countUnique(items, key) {
   return new Set(items.map((item) => item[key]).filter(Boolean)).size;
 }
 
-function formatPrice(price) {
-  const value = Number(price);
-  if (!Number.isFinite(value)) {
-    return price;
-  }
-  return new Intl.NumberFormat('en-IN', {
-    style: 'currency',
-    currency: 'INR',
-    maximumFractionDigits: 0,
-  }).format(value);
-}

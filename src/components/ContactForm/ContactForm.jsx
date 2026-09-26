@@ -1,12 +1,13 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { useForm } from 'react-hook-form';
+import { useSearchParams } from 'react-router-dom';
 import { Send } from 'lucide-react';
 import { siteConfig } from '../../constants/site';
-import { FORM_LIMITS, INDUSTRY_OPTIONS, ORGANIZATION_TYPE_OPTIONS } from '../../constants/enquiryForm';
+import { FORM_LIMITS, ORGANIZATION_TYPE_OPTIONS } from '../../constants/enquiryForm';
 import { sendEnquiryEmails } from '../../services/emailService';
 import {
   normalizeEnquiryData,
-  validateIndustry,
+  validateProjectName,
   validateOrganizationName,
   validateOrganizationType,
   validateRequirement,
@@ -16,6 +17,8 @@ import FormSelect from '../forms/FormSelect';
 import SubmissionFeedbackModal from '../feedback/SubmissionFeedbackModal';
 
 export default function ContactForm() {
+  const [searchParams] = useSearchParams();
+  const selectedProjectName = searchParams.get('project') || '';
   const captchaScriptPromiseRef = useRef(null);
   const [status, setStatus] = useState({ type: '', message: '' });
   const [submissionFeedback, setSubmissionFeedback] = useState({
@@ -33,6 +36,7 @@ export default function ContactForm() {
     register,
     handleSubmit,
     reset,
+    resetField,
     setValue,
     clearErrors,
     watch,
@@ -41,12 +45,16 @@ export default function ContactForm() {
     defaultValues: {
       organizationType: '',
       organizationName: '',
-      interestedIndustry: '',
+      projectName: selectedProjectName,
       requirement: '',
     },
     shouldUnregister: true,
   });
   const organizationType = watch('organizationType');
+
+  useEffect(() => {
+    resetField('projectName', { defaultValue: selectedProjectName });
+  }, [selectedProjectName, resetField]);
 
   useEffect(() => {
     setValue('organizationName', '');
@@ -183,15 +191,17 @@ export default function ContactForm() {
           />
         </Field>
       ) : null}
-      <FormSelect
-        name="interestedIndustry"
-        control={control}
-        label="Interested Industry"
-        placeholder="Select an industry"
-        options={INDUSTRY_OPTIONS}
-        rules={{ validate: validateIndustry }}
-        error={errors.interestedIndustry?.message}
-      />
+      <Field label="Project Name" fieldId="projectName" error={errors.projectName?.message}>
+        <input
+          id="projectName"
+          {...register('projectName', { validate: validateProjectName })}
+          className="form-input"
+          placeholder="Enter your project name"
+          maxLength={FORM_LIMITS.projectNameMax}
+          aria-invalid={Boolean(errors.projectName)}
+          aria-describedby={errors.projectName ? 'projectName-error' : undefined}
+        />
+      </Field>
       <Field label="Subject" fieldId="subject" error={errors.subject?.message}>
         <input
           id="subject"
